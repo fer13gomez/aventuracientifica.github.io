@@ -79,6 +79,8 @@ $(function () {
     mostrarModal(ganaste);
   });
 
+
+
   // Función para mostrar el modal con el mensaje correspondiente
   function mostrarModal(ganaste) {
     var mensaje = ganaste ? "¡Felicitaciones, ganaste!" : "¡Ups, perdiste!";
@@ -96,12 +98,13 @@ $(function () {
     $("button:contains('Intentarlo de nuevo')").on("click", reiniciarJuego);
   }
 
+  
   // Función para cerrar el modal
   function cerrarModal() {
     $("#modal").css("display", "none");
   }
 
-  
+
 
   // Función para barajar las cartas de forma aleatoria
   function shuffleCartas(cartas) {
@@ -150,7 +153,7 @@ function encenderSonido() {
   var encender = document.getElementById('idEncendido');
   var apagar = document.getElementById('idApagado');
 
-  
+
 
   encender.style.display = 'none';
   apagar.style.display = 'inline';
@@ -177,4 +180,13 @@ function apagarSonido() {
 function reiniciarJuego() {
   // Aquí puedes reiniciar el juego, por ejemplo, recargando la página
   location.reload();
+}
+
+function mostrarManual() {
+    $("#modal1").css("display", "block");
+}
+
+// Función para cerrar el modal
+function cerrarManual() {
+  $("#modal1").css("display", "none");
 }
