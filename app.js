@@ -101,11 +101,7 @@ $(function () {
     $("#modal").css("display", "none");
   }
 
-  // Función para reiniciar el juego
-  function reiniciarJuego() {
-    // Aquí puedes reiniciar el juego, por ejemplo, recargando la página
-    location.reload();
-  }
+  
 
   // Función para barajar las cartas de forma aleatoria
   function shuffleCartas(cartas) {
@@ -175,4 +171,10 @@ function apagarSonido() {
 
   // Reproducir el sonido
   $("#sonidoPrincipal")[0].pause();
+}
+
+// Función para reiniciar el juego
+function reiniciarJuego() {
+  // Aquí puedes reiniciar el juego, por ejemplo, recargando la página
+  location.reload();
 }
