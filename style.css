@@ -331,3 +331,59 @@
   top: 2px;
 }
 
+
+.sonidoEncendido {
+  position: absolute;
+  top:2%; /* Ajusta la posición desde la parte superior */
+  right: 10%; /* Ajusta la posición desde la derecha */
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.salir{
+  position: absolute;
+  top: 2%; /* Ajusta la posición desde la parte superior */
+  right: 2%; /* Ajusta la posición desde la derecha */
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.manual{
+  position: absolute;
+  top: 2%; /* Ajusta la posición desde la parte superior */
+  right: 6%; /* Ajusta la posición desde la derecha */
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sonidoEncendido img {
+  width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.manual img {
+  width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.salir img{
+  width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.sonidoApagado {
+  position: absolute;
+  top:2%; /* Ajusta la posición desde la parte superior */
+  right: 10%; /* Ajusta la posición desde la derecha */
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sonidoApagado img {
+  width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.sonidoApagado{
+  display: none;
+}
+

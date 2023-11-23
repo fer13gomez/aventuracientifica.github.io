@@ -3,103 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrastrar y soltar cartas</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Wx4v33yjszFAWzJr+po/S5M2a86pPBQQ5N5p0BYq+0ENaXZ/ICF4IuAZURUAQ4zQ" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Página de Juegos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-    
+        body {
+            background-image: url('images/fondoprincipal.jpg');
+            /* Reemplaza con la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+
+        }
+
+        .jumbotron {
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            width: 50%;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .btn-juego {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="titulo">
-        <p>¡CRECIENDO JUNTOS!</p>
-    </div>
 
-    <div id="contenedor-superior">
-        <div class="carta" id="carta-superior-1">
-            <div class="card-info"></div>
-        </div>
-        <div class="carta" id="carta-superior-2">
-            <div class="card-info"></div>
-        </div>
-        <div class="carta" id="carta-superior-3">
-            <div class="card-info"></div>
-        </div>
-        <div class="carta" id="carta-superior-4">
-            <div class="card-info"></div>
-        </div>
-
-    </div>
-
-    <div class="linea-de-tiempo">
-        <div class="inicio">Inicio</div>
-        <div class="final">Final</div>
-        <div class="evento evento1">
-            <div class="evento-texto">Fase 1</div>
-        </div>
-        <div class="evento evento2">
-            <div class="evento-texto">Fase 2</div>
-        </div>
-        <div class="evento evento3">
-            <div class="evento-texto">Fase 3</div>
-        </div>
-        <div class="evento evento4">
-            <div class="evento-texto">Fase 4</div>
-        </div>
-
-
-    </div>
-
-    <div id="contenedor-inferior">
-        <div class="carta card" id="carta-inferior-1">
-            <div class="card-info">
-                <img src="images/PASO_1.png" alt="">
-            </div>
-        </div>
-        <div class="carta card" id="carta-inferior-2">
-            <div class="card-info">
-                <img src="images/PASO_2.png" alt="">
-            </div>
-        </div>
-        <div class="carta card" id="carta-inferior-3">
-            <div class="card-info">
-                <img src="images/PASO_3.png" alt="">
-            </div>
-        </div>
-        <div class="carta card" id="carta-inferior-4">
-            <div class="card-info">
-                <img src="images/PASO_4.png" alt="">
-            </div>
+    <div class="container text-center">
+        <h1 class="display-4" style="font-family: 'Pacifico', cursive;">Bienvenido a la Página de Juegos</h1>
+        <div class="jumbotron">
+            <p class="lead" style="color: black; font-weight: 600;">Elige un juego para comenzar:</p>
+            <a href="juegoGerminar.html" class="btn btn-primary btn-juego">Germinacion de semillas</a>
+            <a href="juego2.html" class="btn btn-success btn-juego">Partes de una planta</a>
         </div>
     </div>
 
-    <div class="btnFin">
-        <button class="bn632-hover bn27" id="verificarBtn">Verificar</button>
-    </div>
-
-    <div id="mensaje"></div>
-
-    <!-- Ventana modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="cerrarModal()"><img src="images/cerrar.png" alt=""></span>
-            <p id="mensajeModal"></p>
-            <button type="button"  onclick="reiniciarJuego()"  class="css-button-shadow-border-sliding--green">Intentarlo de nuevo</button>
-        </div>
-    </div>
-
-
-    <audio id="sonidoCarta" src="images/movercarta.mp3"></audio>
-    <audio id="sonidoResultado"></audio>
-    
-
-
-
-    <script src="//code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 

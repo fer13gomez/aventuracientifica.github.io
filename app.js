@@ -145,4 +145,34 @@ $(function () {
 
     return closestContainer;
   }
+
+
+
 });
+
+function encenderSonido() {
+  var encender = document.getElementById('idEncendido');
+  var apagar = document.getElementById('idApagado');
+
+  
+
+  encender.style.display = 'none';
+  apagar.style.display = 'inline';
+
+
+  // Reproducir el sonido
+  $("#sonidoPrincipal")[0].play();
+}
+
+function apagarSonido() {
+  var encender = document.getElementById('idEncendido');
+  var apagar = document.getElementById('idApagado');
+
+  encender.style.display = 'inline';
+  apagar.style.display = 'none';
+
+  // Puedes agregar aquí la lógica para apagar el sonido
+
+  // Reproducir el sonido
+  $("#sonidoPrincipal")[0].pause();
+}
