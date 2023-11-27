@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partes de una Planta</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-Wx4v33yjszFAWzJr+po/S5M2a86pPBQQ5N5p0BYq+0ENaXZ/ICF4IuAZURUAQ4zQ" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+    <style>
+        body {
+
+            background-image: url('images/fondo2.png');
+            /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta de tu imagen de fondo */
+            background-size: cover;
+            /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+            background-position: center;
+            /* Centra la imagen de fondo */
+        }
+    </style>
+    <div class="titulo">
+        <p>¡CONOCIENDO LAS PLANTAS!</p>
+    </div>
+
+    <div id="contenedor-superior">
+        <div class="carta" id="carta-superior-1">
+            <div class="card-info"></div>
+        </div>
+        <div class="carta" id="carta-superior-2">
+            <div class="card-info"></div>
+        </div>
+        <div class="carta" id="carta-superior-3">
+            <div class="card-info"></div>
+        </div>
+        <div class="carta" id="carta-superior-4">
+            <div class="card-info"></div>
+        </div>
+
+    </div>
+
+    <div class="linea-de-tiempo">
+        <div class="inicio">Inicio</div>
+        <div class="final">Final</div>
+        <div class="evento evento1">
+            <div class="evento-texto">Raiz</div>
+        </div>
+        <div class="evento evento2">
+            <div class="evento-texto">Tallo</div>
+        </div>
+        <div class="evento evento3">
+            <div class="evento-texto">Hoja</div>
+        </div>
+        <div class="evento evento4">
+            <div class="evento-texto">Flor</div>
+        </div>
+
+
+    </div>
+
+    <div id="contenedor-inferior">
+        <div class="carta card" id="carta-inferior-1">
+            <div class="card-info">
+                <img src="images/raiz.png" alt="">
+            </div>
+        </div>
+        <div class="carta card" id="carta-inferior-2">
+            <div class="card-info">
+                <img src="images/tallo.png" alt="">
+            </div>
+        </div>
+        <div class="carta card" id="carta-inferior-3">
+            <div class="card-info">
+                <img src="images/hoja.png" alt="">
+            </div>
+        </div>
+        <div class="carta card" id="carta-inferior-4">
+            <div class="card-info">
+                <img src="images/flor.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="btnFin">
+        <button class="bn632-hover bn27" id="verificarBtn">Verificar</button>
+    </div>
+
+    <div id="mensaje"></div>
+
+    <!-- Ventana modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()"><img src="images/cerrar.png" alt=""></span>
+            <p id="mensajeModal"></p>
+            <button type="button" onclick="reiniciarJuego()" class="css-button-shadow-border-sliding--green">Intentarlo
+                de nuevo</button>
+        </div>
+    </div>
+
+    <div>
+        <a href="index.html"><span class="salir"><img src="images/salida.png" alt=""></span></a>
+        <span class="manual" onclick="mostrarManual()"><img src="images/manual.png" alt=""></span>
+        <span id="idEncendido" class="sonidoEncendido" onclick="encenderSonido()"><img src="images/volumen.png"
+                alt=""></span>
+        <span id="idApagado" class="sonidoApagado" onclick="apagarSonido()"><img src="images/sin-sonido.png"
+                alt=""></span>
+    </div>
+
+    <!-- Ventana modal -->
+    <div id="modal1" class="modal1">
+        <div class="modal-content1">
+            <span class="close" onclick="cerrarManual()"><img src="images/cerrar.png" alt=""></span>
+            <h2 style="text-align: center;">Instrucciones del Juego</h2>
+            <ol>
+                <li>Arrastra y suelta las cartas inferiores en las posiciones correspondientes de las cartas superiores
+                    para completar las fases de la germinación.</li>
+                <li>Sigue el orden correcto de las fases según la línea de tiempo.</li>
+                <li>Haz clic en "Verificar" para comprobar tu disposición y recibir feedback.</li>
+            </ol>
+        </div>
+    </div>
+
+    <audio id="sonidoCarta" src="images/movercarta.mp3"></audio>
+    <audio id="sonidoResultado"></audio>
+
+    <audio id="sonidoPrincipal" src="images/principal.mp3"></audio>
+
+
+    <script src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>
